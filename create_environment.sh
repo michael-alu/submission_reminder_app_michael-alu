@@ -1,19 +1,23 @@
 #!/bin/bash
 
-mkdir -p submission_reminder_app
+echo "Setting up Environment"
 
-mkdir -p submission_reminder_app/app
+script_dir="$(dirname "$0")"
 
-mkdir -p submission_reminder_app/modules
+mkdir -p "$script_dir/submission_reminder_app"
 
-mkdir -p submission_reminder_app/config
+mkdir -p "$script_dir/submission_reminder_app/app"
 
-mkdir -p submission_reminder_app/assets
+mkdir -p "$script_dir/submission_reminder_app/modules"
 
-touch submission_reminder_app/modules/functions.sh
+mkdir -p "$script_dir/submission_reminder_app/config"
 
-touch submission_reminder_app/app/reminder.sh
+mkdir -p "$script_dir/submission_reminder_app/assets"
 
-touch submission_reminder_app/assets/submission.txt
+touch "$script_dir/submission_reminder_app/modules/functions.sh"
 
-touch submission_reminder_app/config/config.env
+touch "$script_dir/submission_reminder_app/app/reminder.sh"
+
+touch "$script_dir/submission_reminder_app/assets/submissions.txt"
+
+touch "$script_dir/submission_reminder_app/config/config.env"
