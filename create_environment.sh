@@ -14,6 +14,14 @@ mkdir -p "$script_dir/submission_reminder_app/config"
 
 mkdir -p "$script_dir/submission_reminder_app/assets"
 
+rm -rf "$script_dir/submission_reminder_app/modules/functions.sh"
+
+rm -rf "$script_dir/submission_reminder_app/app/reminder.sh"
+
+rm -rf "$script_dir/submission_reminder_app/config/config.env"
+
+rm -rf "$script_dir/submission_reminder_app/assets/submissions.txt"
+
 touch "$script_dir/submission_reminder_app/modules/functions.sh"
 
 touch "$script_dir/submission_reminder_app/app/reminder.sh"
